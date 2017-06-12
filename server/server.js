@@ -7,7 +7,6 @@ import bodyParser from 'body-parser';
 const engine = tingodb();
 const dbPath = config.get('dbPath');
 const db = new engine.Db(dbPath, {});
-// const urlencoded = body_parser.urlencoded;
 const VoiceResponse = Twilio.twiml.VoiceResponse;
 const port = config.get('port');
 const twilioSid = config.get('twilio.accountSid');

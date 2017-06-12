@@ -6,7 +6,9 @@
   "scripts": {
     "start": "nodemon -w server/ -w node_modules/ -w config/ --exec node -r babel-register server/server.js",
     "lint": "eslint server --ext js,jsx --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepush": "docker run -v $(pwd):$(pwd) -w $(pwd) -v /var/run/docker.sock:/var/run/docker.sock  josmo/drone:0.7-dev exec",
+    "pretest": "eslint server --ext js,jsx",
+    "test": "NODE_ENV=test mocha --compilers js:babel-core/register '**/*.spec.js'"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
+    "chai": "^4.0.2",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-filenames": "^1.2.0",
@@ -41,6 +44,9 @@
     "eslint-plugin-mocha": "^4.9.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.0.1",
-    "eslint-plugin-yaml": "https://github.com/pdehaan/eslint-plugin-yaml.git"
+    "eslint-plugin-yaml": "https://github.com/pdehaan/eslint-plugin-yaml.git",
+    "husky": "^0.13.4",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2"
   }
 }

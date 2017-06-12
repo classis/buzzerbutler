@@ -1,10 +1,10 @@
 pipeline:
   node:
-    image: node:6.10.2
+    image: node:6.10.2-slim
     commands:
       - env
-      - npm install
-      - npm test
+      - yarn
+      - yarn test
 
   publish:
     image: plugins/docker
