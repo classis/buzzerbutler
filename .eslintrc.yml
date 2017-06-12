@@ -59,7 +59,7 @@ parser: babel-eslint
 plugins:
 - react
 - filenames
-- yaml
+#- yaml
 - promise
 - mocha
 ecmaFeatures:

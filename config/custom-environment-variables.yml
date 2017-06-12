@@ -2,7 +2,6 @@ twilio:
   accountSid: TWILIO_ACCOUNT_SID
   authToken: TWILIO_TOKEN
 locationName: TWILIO_LOCATION_NAME
-users: BB_USERS
-passcodes: BB_PASSCODES
 openTone: BB_TONE
 phoneNumber: TWILIO_PHONE_NUMBER
+dbPath: BB_DB_PATH
