@@ -1,0 +1,22 @@
+port: 3000
+twilio:
+  accountSid: sidthing
+  authToken: blahblah
+locationName: 'super duper 7 a'
+users:
+  - name: joachim
+    code: '1'
+    verb: reach
+    phone: '+15555555555'
+  - name: allie
+    code: '2'
+    verb: reach
+    phone: '+15555555555'
+  - name: passcode
+    code: '3'
+    verb: use
+passcodes:
+  - '1111'
+  - '2222'
+openTone: 9
+phoneNumber: '+5555555555'

@@ -1,0 +1,70 @@
+rules:
+  mocha/no-exclusive-tests: error
+#  prefer-destructuring:
+#  - error
+#  - array: false
+#    object: true
+#  - enforceForRenamedProperties: true
+  max-len:
+  - warn
+  - 100
+  - 2
+  no-plusplus:
+  - error
+  - allowForLoopAfterthoughts: true
+  no-confusing-arrow: off
+  jsx-quotes:
+  - error
+  - prefer-double
+  import/default: error
+  import/imports-first: error
+  import/order:
+  - error
+  import/named: error
+  import/no-amd: error
+  import/no-commonjs: error
+  import/prefer-default-export: error
+  import/extensions:
+  - error
+  - jsx: never
+  filenames/match-exported:
+  - 2
+  - kebab
+  react/no-unknown-property:
+  - 2
+  - ignore:
+    - readonly
+  react/require-default-props: off
+  react/no-direct-mutation-state: error
+  react/no-find-dom-node: off
+  # sort-keys:
+  # - error
+  # - asc
+  # -
+  #   caseSensitive: true
+  #   natural: false
+env:
+  es6: true
+  node: true
+  browser: true
+globals:
+  describe: false
+  it: false
+  beforeEach: false
+  afterEach: false
+  before: false
+  after: false
+ecmaVersion: 7
+parser: babel-eslint
+plugins:
+- react
+- filenames
+- yaml
+- promise
+- mocha
+ecmaFeatures:
+  modules: true
+  experimentalObjectRestSpread: true
+  jsx: true
+extends:
+- airbnb
