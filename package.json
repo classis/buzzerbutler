@@ -44,7 +44,7 @@
     "eslint-plugin-mocha": "^4.9.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.0.1",
-    "eslint-plugin-yaml": "https://github.com/pdehaan/eslint-plugin-yaml.git",
+    "eslint-plugin-yaml": "^0.1.3",
     "husky": "^0.13.4",
     "istanbul": "^0.4.5",
     "mocha": "^3.4.2"
